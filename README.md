@@ -34,7 +34,7 @@ You may create the master and worker on the same host machine.
 
 * Instantiate master server and worker server on the same machine:
 
-Assuming that your kaldi models are located at /media/kaldi_models on your host machine, create a container:
+Assuming that your kaldi models are located at /opt/models on your host machine, create a container:
 
 ```
 docker run -it -p 8080:80 kaldi_gsserver_multi_cn:v1 /bin/bash
@@ -81,8 +81,6 @@ After checking the setup, you should test your speech recognition service. For t
 <img src="img/4.png" alt="Kõnele configuration" width="200px"/>
 &nbsp;
 <img src="img/5.png" alt="Kõnele configuration" width="200px"/>
-&nbsp;
-<img src="img/6.png" alt="Kõnele configuration" width="200px"/>
 
 
 3. A Javascript client is available at http://kaljurand.github.io/dictate.js/. You must configure it to use your ASR service.
