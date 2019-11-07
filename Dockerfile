@@ -60,9 +60,9 @@ RUN cd /opt/kaldi/tools && \
     rm -rf /opt/kaldi-gstreamer-server/.git/ && \
     rm -rf /opt/kaldi-gstreamer-server/test/ && \
     mkdir -p /opt/models/chinese && cd /opt/models/chinese && \
-    wget http://kaldi-asr.org/models/11/0011_multi_cn_chain_sp_online.tar.gz && \
-    tar zxvf 0011_multi_cn_chain_sp_online.tar.gz && \
-    rm 0011_multi_cn_chain_sp_online.tar.gz && \
+    wget http://kaldi-asr.org/models/11/0011_multi_cn_chain_sp_online_v2.tar.gz && \
+    tar zxvf 0011_multi_cn_chain_sp_online_v2.tar.gz && \
+    rm 0011_multi_cn_chain_sp_online_v2.tar.gz && \
     cp /opt/kaldi-gstreamer-server/sample_chinese_nnet3.yaml /opt/models && \
     find /opt/models/ -type f | xargs sed -i 's:test:/opt:g' && \
     cd /opt
